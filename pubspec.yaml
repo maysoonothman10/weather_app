@@ -1,0 +1,38 @@
+name: weather_app
+description: A multi-page Flutter weather application
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+# -------------------------
+# Dependencies (Root Level)
+# -------------------------
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  http: ^1.2.1
+  flutter_dotenv: ^5.0.2
+  provider: ^6.1.2
+  shared_preferences: ^2.2.2
+  intl: ^0.19.0 
+
+# -------------------------
+# Dev Dependencies
+# -------------------------
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+# -------------------------
+# Flutter Section
+# -------------------------
+flutter:
+  uses-material-design: true
+
+ 
