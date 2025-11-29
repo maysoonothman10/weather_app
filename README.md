@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Flutter Weather App (OpenWeatherMap Current Weather)
 
 ## Description
@@ -22,3 +23,7 @@ A multi-page Flutter application that fetches current weather data from OpenWeat
      and add `/lib/config.dart` to `.gitignore`.
    - Or create a `.env` file and use `flutter_dotenv`.
 4. Install packages:
+=======
+# weather_app
+Flutter Weather App
+>>>>>>> dc3683a05674fa95f5c7af9326e8d4a46a2cee91
