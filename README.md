@@ -1,56 +1,83 @@
-🌤 Flutter Weather App
+# Flutter Weather App 🌤️
 
-A beautiful and functional Flutter weather application that allows users to search for cities, view weather details, manage favorites, and switch between Celsius and Fahrenheit. Built with real-time data from the OpenWeather API.
+A simple Flutter weather application that allows users to search for cities, view weather details, save favorites, and change units (°C/°F).  
 
-📝 Features
+---
 
-🔍 Search for any city worldwide
+## **Features**
+- Search for any city worldwide.
+- Display detailed weather information (temperature, humidity, weather condition, etc.).
+- Add cities to favorites and view them later.
+- Switch between Celsius and Fahrenheit.
+- Real-time API calls with OpenWeatherMap.
 
-🌡 Weather details: temperature, humidity, weather condition, wind speed, etc.
+---
 
-⭐ Favorites: Add and view favorite cities
+## **Folder Structure**
+weather_app/
+├── android/ # Android project files
+├── ios/ # iOS project files
+├── lib/
+│ ├── models/ # Data models (e.g., Weather model)
+│ ├── services/ # API services
+│ ├── screens/ # UI screens
+│ ├── widgets/ # Reusable widgets
+│ ├── config.dart # API key configuration
+│ ├── main.dart # App entry point
+├── assets/ # Images, icons, fonts
+├── build/ # Build output (ignored in Git)
+├── pubspec.yaml # Flutter dependencies
+└── README.md # Project documentation
 
-🌐 Settings: Switch temperature units between Celsius (°C) and Fahrenheit (°F)
+yaml
+Copy code
 
-⚡ Real-time API calls to fetch current weather data
+---
 
+## **Setup & Installation**
 
-⚙️ Setup Instructions
-1. Clone the repository
+### **1. Clone the project**
+```bash
 git clone https://github.com/maysoonothman10/weather_app.git
 cd weather_app
-
 2. Install dependencies
+bash
+Copy code
 flutter pub get
+3. Add your OpenWeather API key
+Open the file lib/config.dart.
 
-3. Add your OpenWeather API Key
+Replace the placeholder with your actual API key:
 
-If using config.dart:
-
+dart
+Copy code
+// lib/config.dart
 const String OPENWEATHER_API_KEY = "YOUR_API_KEY_HERE";
-
-
-If using .env with flutter_dotenv:
-
-OPENWEATHER_API_KEY=YOUR_API_KEY_HERE
+⚠️ Important: Keep your API key private. Do not push it to public repositories.
 
 4. Run the app
-flutter run
+For Android:
 
-5. Build APK for Android
+bash
+Copy code
+flutter run -d android
+For Windows:
+
+bash
+Copy code
+flutter run -d windows
+For Web:
+
+bash
+Copy code
+flutter run -d chrome
+Build APK for Android
+bash
+Copy code
 flutter build apk --release
+The APK will be generated at:
 
-
-The release APK will be located at:
+swift
+Copy code
 build/app/outputs/flutter-apk/app-release.apk
-
-This APK is required for submission, so your teacher/tester can install it on Android devices.
-
-🔗 API
-
-This app uses the OpenWeather API
- to fetch weather data.
-
-Sign up for a free API key
-
-Replace the placeholder in config.dart or .env with your key
+You can upload this APK along with your project to GitHub.
